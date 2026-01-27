@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Pizza Ordering Form</title>
+</head>
+
+    <body>
+        
+        <header>
+            <h1>Pizza Ordering Form</h1>
+            </header>
+
+            <main>
+
+           <form>
+                <h2>Contact Information</h2>
+        
+            <div>
+            <label for="inName" title="required">Name:</label>
+            <input type="text" name="inName" id="inName" required> <br/>
+    
+            <label for="inPhone">Phone:</label>
+            <input type="tel" name="inPhone" id="inPhone" required> <br/>
+            <label for="inEmail">Email:</label>
+            <input type="email" name="inEmail" id="inEmail" required>
+
+            </div>
+
+
+        <div>
+            <h2>Select Pizza Size</h2>
+
+        </div>
+
+        <div>
+            <label for="PizzaSize">Pizza Size:</label>
+            <select name="PizzaSize" id="PizzaSize" required>
+                <option value="" disabled selected>--select size--</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="XLarge">XLarge</option>
+        
+            </select>
+        </div>
+        <div>
+            <h2>Select Sauce</h2>
+        </div>
+        <div>
+            <input type="radio" name="PizzaSauce" required><label>Marinara</label><br>
+            <input type="radio" name="PizzaSauce"><label>Ranch</label><br>
+            <input type="radio" name="PizzaSauce"><label>No Sauce</label><br>
+        </div>
+        <div>
+            <h2>Select Toppings</h2>
+            <input type="checkbox" name="Toppings"><label>Pepperoni</label>
+            <input type="checkbox" name="Toppings"><label>Sausage</label><br>
+            <input type="checkbox" name="Toppings"><label>Mushrooms</label>
+            <input type="checkbox" name="Toppings"><label>Pineapple</label><br>
+            <input type="checkbox" name="Toppings"><label>Peppers</label>
+            <input type="checkbox" name="Toppings"><label>Onions</label><br>
+            
+        </div>
+
+        <div>
+            <h2>Additional instructions</h2>
+            <textarea id="SpecialInstructions" name="SpecialInstructions" rows="2" cols="18" placeholder="Add instructions"></textarea><br>
+
+            
+            <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <br><br>
+
+
+        <section>
+            <table border="1">
+                <caption>List of My Favorite Games</caption>
+                <thead>
+                    <tr>
+                        <th>Developer</th>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr> 
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Bungie</td>
+                        <td>Halo</td>
+                        <td>2001</td>
+                    </tr>
+                    <tr>
+                        <td>Doom</td>
+                        <td>1993</td>
+                    </tr>
+                    <tr>
+                        <td>Valve</td>
+                        <td>Half-Life</td>
+                        <td>1998</td>
+                    </tr>
+                    <tr>
+                        <td>SMS</td>
+                        <td>God or War</td>
+                        <td>2005</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">3</td>
+                    </tr>
+
+                </tbody>
+                </table>
+                    
+
+
+            </section>
+
+
+            </main>
+
+    </body>
+</html>
