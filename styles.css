@@ -1,0 +1,103 @@
+
+/* ===== Page ===== */
+body {
+  background-color: #bfe3ec; /* light blue background */
+  font-family: Arial, "Times New Roman", sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  color: #000;
+}
+
+/* ===== Headings ===== */
+h1 {
+  text-align: center;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 70x;
+  margin-top: 30px;
+  /*margin-bottom: 10px;*/
+}
+
+/* ===== Paragraphs ===== */
+p {
+  font-size: 12.3px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Boxed second paragraph */
+#paragraph2 {
+  width: 53%;
+  background-color: #ffffff;
+  border: 4px solid green;
+  padding: 25px;
+  margin: 10px 0;
+  line-height: 1.8;
+  text-align: left;
+}
+
+
+
+/* ✅ ONLY the 5th paragraph is dark blue */
+.blue {
+  background-color: #001a8f;
+  color: #ffffff;
+  padding: 15px;
+  border: 2px solid #000;
+}
+
+
+/*Everything from here down is fine, do not touch***************************/
+
+
+/* ===== Links ===== */
+a {
+  color: blue;
+}
+
+/* List item links */
+ol li a {
+  color: #0000cc;
+}
+
+/* W3Schools link (different color) */
+a[href*="w3schools"] {
+  color: red;
+}
+
+/* ===== Ordered List ===== */
+ol {
+  list-style-type: decimal-leading-zero;
+  margin-left: -15px;
+}
+
+/* ===== Table ===== */
+table {
+  border-collapse: collapse;
+  width: 60%;
+  margin-top: 15px;
+  background-color: #ffffff;
+}
+
+/* Borders everywhere */
+table,
+th,
+td {
+  border: 1px solid #000;
+}
+
+/* Header cells */
+th {
+  background-color: #e6e6e6;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Data cells */
+td {
+  background-color: #ffffff;
+  padding: 8px;
+}
