@@ -41,6 +41,12 @@ body {
 #recentArticles:hover + #jumpMenu {
     display: block;
 }
+
+#recentArticles:hover + #jumpMenu,
+#jumpMenu:hover {
+    display: block;
+}
+
 #jumpMenu li {
     display:block;
     background-color: #d07aaf;
