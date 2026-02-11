@@ -121,7 +121,7 @@ article > p:first-of-type::first-letter {
 article {
       width: 300px;
     color: #aaa;
-    max-height: 400px;
+    max-height: 300px;
     overflow: hidden;
     transition: color 2s ease, max-height 2s ease;
 }
