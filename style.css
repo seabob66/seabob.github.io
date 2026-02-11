@@ -47,7 +47,7 @@ body {
     display: block;
 }
 
-#jumpMenu li {
+#jumpMenu li a {
     display:block;
     background-color: #d07aaf;
     color: white;
@@ -55,7 +55,7 @@ body {
     text-decoration: none;
     border-bottom: 1px solid #de757f;
 }
-#jumpMenu li:hover {
+#jumpMenu li a:hover {
     background-color: #0000cc;
 }
 
