@@ -16,7 +16,7 @@ function runForLoop() {
     for (let i = 0; i <= counter; i++) {
         result += i + " " ;
     }
-    document.getElementByid("forLoopResult").textContent = result.trim();
+    document.getElementById("forLoopResult").textContent = result.trim();
 }
 //<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 function showOddNumbers () {
