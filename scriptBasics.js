@@ -1,15 +1,14 @@
 function tickUp() {
     let counter = document.getElementById("counter");
-    counter.textContent = parseInt (counter.textContent) + 1; 
-} 
+    counter.textContent = parseInt(counter.textContent) + 1;
+}
 
-function tickDown () {
+function tickDown() {
     let counter = document.getElementById("counter");
-    counter.textContent = parseInt ( counter.textContent) - 1;
-} 
+    counter.textContent = parseInt(counter.textContent) - 1;
+}
 
-//<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
-
+////<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 function runForLoop() {
     let counter = parseInt(document.getElementById("counter").textContent);
     let result = "";
