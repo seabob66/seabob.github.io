@@ -1,16 +1,16 @@
-function simpleFuncUp () {
+function tickUp () {
     let counter = document.getElementById("counter");
     counter.textContent = parseInt (counter.textContent) + 1; 
 } 
 
-function simpleFuncDown () {
+function tickDown () {
     let counter = document.getElementById("counter");
     counter.textContent = parseInt ( counter.textContent) - 1;
 } 
 
 //<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-function simpleForLoop() {
+function runForLoop() {
     let counter = parseInt(document.getElementById("counter").textContent);
     let result = "";
     for (let i = 0; i <= counter; i++) {
@@ -19,7 +19,7 @@ function simpleForLoop() {
     document.getElementByid("forLoopResult").textContent = result.trim();
 }
 //<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
-function repCondition () {
+function showOddNumbers () {
     let counter = parseInt(document.getElementById("counter").textContent);
     let result = " ";
     let i = 1;
@@ -33,7 +33,7 @@ function repCondition () {
 }
 //<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-function arrayFunc () {
+function addMultiplesToArray () {
     let counter = parseInt(document.getElementById("counter").textContent;
     let multiples = [];
     if (counter >= 5) {
@@ -46,7 +46,7 @@ function arrayFunc () {
 }
 //<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-function printCar () {
+function printCarObjects () {
     let car = {
         cType: document.getElementById("carType").value,
         cMPG: document.getElementById("carMPG").value,
@@ -67,9 +67,10 @@ function loadCar (num) {
 }
 //<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-function changeStyle (num) {
+function changeColor (num) {
     let p = document.getElementById("styleParagraph");
     if (num == 1) p.style.color = "red";
     else if (num == 1) p.style.color = "green";
     else if (num == 1) p.style.color = "blue";
+
 
