@@ -14,7 +14,7 @@ function runForLoop() {
     let counter = parseInt(document.getElementById("counter").textContent);
     let result = "";
     for (let i = 0; i <= counter; i++) {
-        result += i + " " ;
+        result += i + " ";
     }
     document.getElementById("forLoopResult").textContent = result.trim();
 }
