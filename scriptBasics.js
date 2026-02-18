@@ -1,30 +1,29 @@
-// ── Simple Functions ──────────────────────────────────────────────
-function tickUp() {
+function simpleFuncUp () {
     let counter = document.getElementById("counter");
-    counter.textContent = parseInt(counter.textContent) + 1;
-}
+    counter.textContent = parseInt (counter.textContent) + 1; 
+} 
 
-function tickDown() {
+function simpleFuncDown () {
     let counter = document.getElementById("counter");
-    counter.textContent = parseInt(counter.textContent) - 1;
-}
+    counter.textContent = parseInt ( counter.textContent) - 1;
+} 
 
-// ── Simple For Loop ───────────────────────────────────────────────
-function runForLoop() {
+//<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+
+function simpleForLoop() {
     let counter = parseInt(document.getElementById("counter").textContent);
     let result = "";
     for (let i = 0; i <= counter; i++) {
-        result += i + " ";
+        result += i + " " ;
     }
-    document.getElementById("forLoopResult").textContent = result.trim();
+    document.getElementByid("forLoopResult").textContent = result.trim();
 }
-
-// ── Repetition with Condition ─────────────────────────────────────
-function showOddNumbers() {
+//<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+function repCondition () {
     let counter = parseInt(document.getElementById("counter").textContent);
-    let result = "";
+    let result = " ";
     let i = 1;
-    while (i <= counter) {
+    while (i<= counter) {
         if (i % 2 !== 0) {
             result += i + " ";
         }
@@ -32,10 +31,10 @@ function showOddNumbers() {
     }
     document.getElementById("oddNumberResult").textContent = result.trim();
 }
+//<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-// ── Arrays ────────────────────────────────────────────────────────
-function addMultiplesToArray() {
-    let counter = parseInt(document.getElementById("counter").textContent);
+function arrayFunc () {
+    let counter = parseInt(document.getElementById("counter").textContent;
     let multiples = [];
     if (counter >= 5) {
         for (let i = 5; i <= counter; i += 5) {
@@ -43,34 +42,34 @@ function addMultiplesToArray() {
         }
         multiples.reverse();
     }
-    console.log(multiples);
+    console.log(multiple);
 }
+//<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-// ── Objects and Form Fields ───────────────────────────────────────
-function printCarObject() {
+function printCar () {
     let car = {
-        cType:  document.getElementById("carType").value,
-        cMPG:   document.getElementById("carMPG").value,
-        cColor: document.getElementById("carColor").value
+        cType: document.getElementById("carType").value,
+        cMPG: document.getElementById("carMPG").value,
+        cColor: document.getElementById("carColor").value,
     };
-    console.log(car);
+        console.log(car);
 }
-
-function loadCar(num) {
+//<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
+function loadCar (num) {
     let car;
-    if      (num === 1) car = carObject1;
-    else if (num === 2) car = carObject2;
-    else if (num === 3) car = carObject3;
+    if (num == 1) car = carObject1;
+    else if (num == 2) car = carObject2;
+    else if (num == 3) car = carObject3;
 
-    document.getElementById("carType").value  = car.cType;
-    document.getElementById("carMPG").value   = car.cMPG;
+    document.getElementById("carType").value = car.cType;
+    document.getElementById("carMPG").value = car.cMPG;
     document.getElementById("carColor").value = car.cColor;
 }
+//<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3<3
 
-// ── Changing Styles ───────────────────────────────────────────────
-function changeColor(num) {
+function changeStyle (num) {
     let p = document.getElementById("styleParagraph");
-    if      (num === 1) p.style.color = "red";
-    else if (num === 2) p.style.color = "green";
-    else if (num === 3) p.style.color = "blue";
-}
+    if (num == 1) p.style.color = "red";
+    else if (num == 1) p.style.color = "green";
+    else if (num == 1) p.style.color = "blue";
+
