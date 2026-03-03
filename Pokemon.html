@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pokemon</title>
+
+    <link rel="stylesheet" href="poki.css">
+
+</head>
+
+<body>
+    
+
+    <h1>Pokemon</h1>
+
+    <div>
+        <input type="text" id="searchInput" placeholder="Search for a Pokemon...">
+        <button onclick="handleSearch()">Search</button>
+    </div>
+
+    <div id ="searchResultsArea" class = "hidden">
+        <img id="pokemonImage">
+        <audio id="pokemonCry" controls></audio>
+    
+    
+    
+        <select id="move1"></select>
+        <select id="move2"></select>
+        <select id="move3"></select>
+        <select id="move4"></select>
+        <button id="addToTeamButton" class="hidden" onclick="addToTeam()">Add to Team</button>
+    </div>
+    <div id="team-container" class ="hidden">
+        </div> 
+       
+    
+    <script src="poki.js"></script>
+       
+</body>
