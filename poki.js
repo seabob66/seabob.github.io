@@ -1,20 +1,19 @@
 async function handleSearch() {
-    // Gets the text from the input box and makes it lowercase (API needs lowercase)
-    const name = document.getElementById('searchInput').value.toLowerCase();
-    if (!name) return; // If the box is empty, stop here
 
+    const name = document.getElementById('searchInput').value.toLowerCase();
+    if (!name) return;
 
     let data;
-    const cachedData = localStorage.getItem(name); // Look for the name in storage
+    const cachedData = localStorage.getItem(name);
 
     if (cachedData) {
-        data = JSON.parse(cachedData); // If found, turn the string back into a JS object
+        data = JSON.parse(cachedData); 
     } else {
-        // If NOT found, fetch it from the API
-        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
-        data = await response.json(); // Convert the raw response to JSON
 
-        // Save it to localStorage so we don't have to fetch it again next time
+        const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
+        data = await response.json(); 
+
+       
         localStorage.setItem(name, JSON.stringify(data));
     }
 
